@@ -36,27 +36,14 @@ $(function () {
             "margin-left": "0px"
         }, 10).html('');
     
-        var randed2 = selected;
-        for(var i = 0;i < 101; i++) {
-            var element = '<div id="CardNumber'+i+'" class="item class_red_item" style="background-image:url('+items[selectedCase][0]['image']+');"></div>';
-            var randed = randomInt(1, 1000);
-            if(randed < 50) {
-                element = '<div id="CardNumber'+i+'" class="item class_red_item" style="background-image:url('+items[selectedCase][2]['image']+');"></div>';
-            } else if(500 < randed) {
-                element = '<div id="CardNumber'+i+'" class="item class_red_item" style="background-image:url('+items[selectedCase][1]['image']+');"></div>';
-            }
+        for(var i = 0; i < 101; i++) {
+            var randed = randomInt(1, items[selectedCase].length);
+            var element = '<div id="CardNumber'+i+'" class="item class_red_item" style="background-image:url('+items[selectedCase][randed]['image']+');"></div>';
             $(element).appendTo('.raffle-roller-container');
         }
 
         setTimeout(function() {
-            if (randed2 == 2) {
-                goRoll(items[selectedCase][2]['image']);
-            } else if (randed2 == 1) {
-                goRoll(items[selectedCase][1]['image']);
-            } else {
-                goRoll(items[selectedCase][0]['image']);
-            }
-            
+            goRoll(items[selectedCase][selected]['image']);
         }, 500);
     }
 
