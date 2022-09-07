@@ -4,7 +4,7 @@ This resource lets you create usable crates, that will give the player items tha
 ## Dependencies
 - [qb-core](https://github.com/qbcore-framework/qb-core)
 ## Preview
-![](https://streamable.com/24639d)
+https://streamable.com/24639d
 
 ## Shared items example
 ```lua
