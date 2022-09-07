@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+body {
+	background: none !important;
+}
+
+.raffle-roller {
+    height: 100px;
+    position: relative;
+    margin: 60px auto 30px auto;
+    width: 900px;
+}
+
+.raffle-roller-holder {
+    overflow: hidden;
+    border-radius: 2px;
+	border: 1px solid #3c3759;
+}
+
+.raffle-roller-holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    width: 960px;
+    margin: auto;
+}
+.raffle-roller-container {
+    width: 9999999999999999999px;
+    max-width: 999999999999999999px;
+    height: 100px;
+    background: #191726;
+    margin-left: 0;
+    transition: all 8s cubic-bezier(.08,.6,0,1);
+}
+.raffle-roller-holder:before {
+	content: "";
+	position: absolute;
+	border: none;
+	z-index: 12222225;
+	width: 5px;
+	height: 100%;
+	left: 50%;
+	background: #d16266;
+}
+.item {
+	display: inline-block;
+	float: left;
+	margin: 4px 0px 0.5px 5px;
+    width: 85px;
+	height: 88px;
+	border: 1px solid #70677c;
+	background: #14202b;
+	background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.class_red_item {
+	border-bottom: 4px solid #00F9B9;
+}
+img {
+	border: 0;
+	vertical-align: middle;
+}
+.winning-item {
+	border: 2px solid #66b233;
+	position: relative;
+	top: -1px;
+    border-bottom: 4px solid #66b233;
+}
+.inventory {
+	margin: 0 auto;
+	width: 960px;
+	max-width: 953px;
+	padding: 10px 15px 6px;
+	height: auto;
+	border: 2px solid #1c3344;
+	background: #0e1a23;
+}
+.inventory > .item {
+	float: none;
+	cursor: pointer;
+	margin: 4px 2px 0.5px 2px;
+}
+.inventory > .item:hover {
+	background-size: 90%;
+	background-color: #182a38;
+}
+.inventory > .item:active {
+	height: 83px;
+	width: 80px;
+	position: relative;
+	top: -2px;
+	border: 2px solid #356d27;
+	border-bottom: 4px solid #356d27;
+}
