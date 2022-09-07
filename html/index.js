@@ -20,7 +20,7 @@ $(function () {
         setTimeout(function() {
             $('#CardNumber78').addClass('winning-item');
             $('#rolled').html(skinimg);
-            //$.post(`https://${GetParentResourceName()}/close`, JSON.stringify({}));
+            $.post(`https://${GetParentResourceName()}/close`, JSON.stringify({}));
         }, 8500);
         $('.raffle-roller-container').css('margin-left', '-6770px');
     }
