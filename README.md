@@ -22,3 +22,6 @@ https://streamable.com/24639d
 ['case_recoil'] 			 = {['name'] = 'case_recoil', 				['label'] = 'Recoil Case', 				['weight'] = 2000, 		['type'] = 'item', 		['image'] = 'case_recoil.png', 		['unique'] = true, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'A prize awaits inside.'},
 ['case_prisma2'] 			 = {['name'] = 'case_prisma2', 				['label'] = 'Prisma 2 Case', 				['weight'] = 2000, 		['type'] = 'item', 		['image'] = 'case_recoil.png', 		['unique'] = true, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'A prize awaits inside.'},
 ```
+
+# Discord
+https://www.discord.gg/projectsloth
