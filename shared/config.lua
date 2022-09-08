@@ -21,12 +21,12 @@ Config.Rewards = {
 			weight = 70
 		},
 		{
-				item = 'water',
-				weight = 25
+			item = 'water',
+			weight = 25
 		},
 		{
-				item = 'burger',
-				weight = 5
+			item = 'burger',
+			weight = 5
 		},
 	},
 }
