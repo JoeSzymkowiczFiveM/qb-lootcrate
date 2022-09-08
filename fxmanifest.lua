@@ -1,9 +1,12 @@
 fx_version 'cerulean'
 game 'gta5'
-
 lua54 'yes'
 
+dependency 'es_extended'
+dependency 'ox_inventory'
+
 shared_scripts {
+    '@es_extended/imports.lua',
     'shared/config.lua',
 }
 
