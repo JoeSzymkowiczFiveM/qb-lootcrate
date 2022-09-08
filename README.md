@@ -1,27 +1,23 @@
-## Description
-This resource lets you create usable crates, that will give the player items that you associate with them.
+<p align="center">
+<img src="https://github.com/fivemland/fl_lootcrate/blob/main/html/img/logo.png" width="100" height="100">
+</p>
 
-## Features
-* Custom weighted chances to drop specific items
-* Use local or remote images for spinner
-* Create multiple cases, each with the own set of items
-* Randomized, server-sided item selection and validation
-* Included several CSGO case inventory images, and included 2 creates as an example in the config
+<h1 align="center">
+FiveM Land Lootcrate
+</p>
 
-## Credit
-- [Dimka Zheleznov](https://codepen.io/zheleznov) for the UI code and posting it to codepen. Wherever you are, hats off to you. I absolutely copied near-100% to make this work.
+## Showcase
+
+[![https://youtu.be/cUmySg-GpAo](https://img.youtube.com/vi/cUmySg-GpAo/0.jpg)](https://www.youtube.com/watch?v=cUmySg-GpAo)
 
 ## Dependencies
-- [qb-core](https://github.com/qbcore-framework/qb-core)
 
-## Preview
-https://streamable.com/24639d
+- [ESX Legacy](https://github.com/esx-framework/esx-legacy 'ESX Legacy')
+- [ox_inventory](https://github.com/overextended/ox_inventory 'ox_inventory')
 
-## Shared items example
-```lua
-['case_recoil'] 			 = {['name'] = 'case_recoil', 				['label'] = 'Recoil Case', 				['weight'] = 2000, 		['type'] = 'item', 		['image'] = 'case_recoil.png', 		['unique'] = true, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'A prize awaits inside.'},
-['case_prisma2'] 			 = {['name'] = 'case_prisma2', 				['label'] = 'Prisma 2 Case', 				['weight'] = 2000, 		['type'] = 'item', 		['image'] = 'case_recoil.png', 		['unique'] = true, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'A prize awaits inside.'},
-```
+## Installation
 
-## Discord
-https://www.discord.gg/projectsloth
+- Add items to ox_inventory (see case names in config.lua)
+- Add case images from CASE_ICONS
+
+## [Original qbcore resource](https://github.com/JoeSzymkowiczFiveM/qb-lootcrate 'Original qbcore resource')
