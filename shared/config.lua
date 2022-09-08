@@ -1,7 +1,7 @@
 Config = {}
 Config.Rewards = {
-	--['case item name']
 	['case_recoil'] = { --Case item name in your inventory
+		--Reward items
 		{
 			item = 'weapon_pistol', --Item name in your inventory. Can be any item.
 			weight = 70 --Weighted chance of item dropping. Higher the number, higher the chance. 70/100 == high chance, common. 5/100 == low chance, rare. Duh.
