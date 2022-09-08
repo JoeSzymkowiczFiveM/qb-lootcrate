@@ -8,7 +8,7 @@ Config.Rewards = {
         },
         [2] = {
             item = 'weapon_doublebarrelfm',
-            image = 'img/weapon_doublebarrelfm.png',
+            image = 'https://cfx-nui-qb-inventory/html/images/weapon_doublebarrelfm.png', --This is an example of using the inventory item image directly from the inventory resources. Thanks TrueSunnyD for the tip.
             weight = 25
         },
         [3] = {
