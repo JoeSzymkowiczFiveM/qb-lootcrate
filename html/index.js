@@ -30,7 +30,6 @@ $(function () {
   }
 
   function generate(selectedCase, selected) {
-    //console.log(selectedCase)
     $('.raffle-roller-container')
       .css(
         {
