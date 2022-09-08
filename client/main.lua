@@ -1,32 +1,43 @@
-local display = false
-local loadedConfig = false
+local opening = false
 
-RegisterNUICallback("close", function(data, cb)
-    if not data.immediate then
-        Wait(2000)
-    end
-    SetNuiFocus(false, false)
-    SendNUIMessage({
-        type = "ui",
-        status = false,
-    })
-    cb('ok')
+RegisterNUICallback("getRewards", function(_, cb)
+  cb(Config.Rewards)
 end)
 
-RegisterNetEvent("qb-lootcrate:client:open", function(case, random)
-    SetNuiFocus(true, true)
-    if not loadedConfig then
-        loadedConfig = true
-        SendNUIMessage({
-            type = "load",
-            rewards = Config.Rewards,
-        })
-        Wait(100)
-    end
-    SendNUIMessage({
-        type = "ui",
-        status = true,
-        case = case,
-        selected = random,
-    })
+RegisterNUICallback("close", function(data, cb)
+	if not opening then 
+		return cb('ok')
+	end
+
+	if not data.immediate then
+		Wait(1000)
+		TriggerServerEvent("lootcrate:server:give", opening)
+		Wait(1000)
+	end
+	SetNuiFocus(false, false)
+	SendNUIMessage({
+		status = false,
+	})
+
+	opening = nil
+	cb('ok')
+end)
+
+RegisterNetEvent("lootcrate:client:open", function(case, random, usedItem)
+	if opening then
+		return
+	end
+
+	opening = {
+		case = case,
+		random = random,
+		usedItem = usedItem,
+	}
+
+	SetNuiFocus(true, true)
+	SendNUIMessage({
+		status = true,
+		case = case,
+		selected = random,
+	})
 end)
