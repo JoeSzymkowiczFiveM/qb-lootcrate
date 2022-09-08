@@ -8,7 +8,7 @@ FiveM Land Lootcrate
 
 ## [Showcase](https://www.youtube.com/watch?v=cUmySg-GpAo 'Showcase')
 
-[![https://youtu.be/cUmySg-GpAo](https://img.youtube.com/vi/cUmySg-GpAo/0.jpg)](https://www.youtube.com/watch?v=cUmySg-GpAo)
+[![https://github.com/fivemland/fl_lootcrate/blob/main/Screenshot.png](https://github.com/fivemland/fl_lootcrate/blob/main/Screenshot.png 'https://github.com/fivemland/fl_lootcrate/blob/main/Screenshot.png')](https://github.com/fivemland/fl_lootcrate/blob/main/Screenshot.png 'https://github.com/fivemland/fl_lootcrate/blob/main/Screenshot.png')
 
 ## Dependencies
 
