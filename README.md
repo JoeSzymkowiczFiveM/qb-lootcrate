@@ -24,4 +24,4 @@ https://streamable.com/24639d
 ```
 
 ## Discord
-https://www.discord.gg/projectsloth
+[Joe Szymkowicz FiveM Development](https://discord.gg/5vPGxyCB4z)
